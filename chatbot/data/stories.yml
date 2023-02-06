@@ -1,0 +1,25 @@
+version: "3.1"
+
+stories:
+
+- story: greet user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: chitchat
+  steps:
+    - intent: test_content
+    - action: utter_test_content
+
+- story: first phrases
+  steps:
+    - intent: progress
+    - action: utter_some_essential_phrases
+    - intent: some_essential_phrases
+    - action: utter_chitchat2
+
+- story: goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye

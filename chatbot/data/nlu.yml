@@ -1,0 +1,49 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: test_content
+  examples: |
+    - I'm ready to learn some Portuguese!
+    - ready to do some learning
+    - cool! teach me something
+    - let's learn some portuguese
+
+- intent: progress
+  examples: |
+    - tell me more
+    - go on
+
+- intent: some_essential_phrases
+  examples: |
+      - Wow that is a lot to take in! Thank you :)
+      - Pretty cool 
+      - nice! thank you for your help

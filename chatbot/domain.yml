@@ -1,0 +1,53 @@
+ version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - test_content
+  - progress
+  - some_essential_phrases
+
+responses:
+  utter_greet:
+  - text: "Hi! My name is Ines and I will be your Portuguese teacher."
+  - text: "Hello, I'm Ines. Ready to learn some Portuguese?"
+
+  utter_test_content:
+  - text: "Amazing! Let's start with the basics :)"
+  - text: "Awesome! I have some simple greetings and basic terms to teach you."
+
+  utter_some_essential_phrases:
+  - text: "Hello = Olá
+    
+           It's nice to meet you = Prazer em conhecer
+             
+           Thank you = Obrigado (maculine) / Obrigada (feminine)
+
+           You're welcome = De nada
+             
+           How are you? = Como está? -> to reply to this one could say:
+            Estou bem, obrigado. = I'm fine, thank you. (masculine as in this case 
+            obrigado ends with -o) 
+             
+           Please = Por favor
+
+           Sorry = Desculpe / Desculpa (more informal)
+
+           Excuse me = Com licença
+            
+           See you later = Até logo
+
+           See you tomorrow = Até amanhã
+
+           Goodbye = Adeus / Xau (very informal)"
+
+  utter_chitchat2:
+  - text: "These are some introductory terms to carry out a simple conversation."
+
+  utter_goodbye:
+  - text: "It was nice chatting to you! Goodbye (or should I say Adeus!)"
+  - text: "See you later!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

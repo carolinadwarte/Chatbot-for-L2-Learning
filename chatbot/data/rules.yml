@@ -1,0 +1,28 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say test_content anytime the user asks for content
+  steps:
+  - intent: test_content
+  - action: utter_test_content
+
+- rule: Say chitchat2 anytime the user reacts with content
+  steps:
+  - intent: some_essential_phrases
+  - action: utter_chitchat2
+
+- rule: Deliver content anytime the user asks for progress 
+  steps:
+  - intent: progress
+  - action: utter_some_essential_phrases
+
+- rule: Greet the user anytime the user says hello
+  steps:
+  - intent: greet
+  - action: utter_greet
