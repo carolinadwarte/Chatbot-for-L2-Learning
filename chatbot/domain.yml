@@ -41,6 +41,28 @@ responses:
 
            Goodbye = Adeus / Xau (very informal)"
 
+  utter_lesson1_personalPronouns:
+    - text: "The first gramatical content I will teach you are personal pronouns. 
+             Here's a simple table showing the correspondence between both languages:
+             Eu - I
+             Tu - You (familiar singular)
+             Você - You (informal singular)
+             Ele - He
+             Ela - She
+             Nós - We
+             Vocês - You (familiar plural)
+             Eles - They (masculine)
+             Elas - They (feminine)
+             
+             Notes:
+             The pronoun TU is used among relatives, children and people of similar age. 
+             For more informal conversations (eg. in the workplace, between student - teacher)
+             the pronoun VOCÊ is more adequate.
+             
+             The plural of both pronouns above discussed is VOCÊS."
+
+  utter_lesson1_verbsTer/Haver:
+    - text: ""
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
 
