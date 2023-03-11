@@ -55,14 +55,80 @@ responses:
              Elas - They (feminine)
              
              Notes:
+             In portuguese it is common to omit the personal pronouns EU, TU and NÓS as the ending of the verb is enough
+             to tell who is performing the described action.
+             
              The pronoun TU is used among relatives, children and people of similar age. 
              For more informal conversations (eg. in the workplace, between student - teacher)
              the pronoun VOCÊ is more adequate.
              
              The plural of both pronouns above discussed is VOCÊS."
 
-  utter_lesson1_verbsTer/Haver:
-    - text: ""
+  utter_lesson1_verbsTer:
+    - text: "The verb TER, means - to have. 
+             Here is the present tense of the verb TER:
+             Eu tenho - I have
+             Tu tens - You have (familiar singular)
+             Você tem - You have (informal singular)
+             Ele tem - He has
+             Ela tem - She has
+             Nós temos - We have
+             Vocês têm - You have (familiar plural)
+             Eles têm - They have (masculine)
+             Elas têm - They have (feminine)
+             
+             Common expressions with the verb TER:
+             - Ele tem fome. -> He is hungry.
+             - Eu tenho sede./Tenho sede. -> I am thirsty.
+             - Você tem vinte anos. -> You are twenty years old."
+
+  utter_lesson1_verbsHaver:
+    - text: "In the portuguese language the verb HAVER has 3 different uses:
+             - it indicates that something exists: HÁ - there is
+             (eg. HÁ aqui muita gente. -> There are a lot of people here.)
+             - it indicates that something has happened in the past
+             (eg. O avião partiu HÁ cinco minutos. -> The plane left five minutes ago.)
+             - is used to express something that will happen in the future as an auxiliary verb : HEI DE - I will
+             (eg. Amanhã HEI DE lavar o meu carro. -> Tomorrow I will wash my car.)
+
+             Here is the present tense of the verb HAVER as an auxiliary verb:
+             Eu hei de - I will
+             Tu hás de - You will (familiar singular)
+             Você há de - You will (informal singular)
+             Ele há de - He will
+             Ela há de - She will
+             Nós havemos de - We will
+             Vocês hão de - You will (familiar plural)
+             Eles hão de - They will (masculine)
+             Elas hão de - They will (feminine)
+             
+             Common expressions with the verb HAVER as an auxiliary verb (used to talk about the future):
+             - Hei de ir ao Algarve./Eu hei de ir ao Algarve. -> I will go to the Algarve.
+             - Eles hão de te ajudar. -> They will help you."
+
+  utter_lesson1_articles:
+    - text: "The definite article: THE
+             THE has 4 different variations singular/plural and masculine/feminine.
+             
+                    THE
+              - singular:
+                    - masculine: o (eg. o rapaz -> the boy)
+                    - feminine: a (eg. a rapariga -> the girl) 
+              - plural: 
+                    - masculine: os (eg. os rapazes -> the boys)
+                    - feminine: as (eg. as raparigas -> the girls)
+            
+             The indefinite article: A, AN, SOME
+            In portuguese A and AN both mean the same and can be translated in the following way:
+                  
+                   A, AN
+              - singular:
+                    - masculine: um (eg. um rapaz -> a boy)
+                    - feminine: uma (eg. uma rapariga -> a girl) 
+              - plural: 
+              For better correlation between languages, the plural forms of the articles above can be translated to: some.
+                    - masculine: uns (eg. uns rapazes -> some boys)
+                    - feminine: umas (eg. umas raparigas -> some girls"
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
 
