@@ -42,7 +42,7 @@ responses:
            Goodbye = Adeus / Xau (very informal)"
 
   utter_lesson1_personalPronouns:
-    - text: "The first gramatical content I will teach you are personal pronouns. 
+    - text: "The first grammatical content I will teach you are personal pronouns. 
              Here's a simple table showing the correspondence between both languages:
              Eu - I
              Tu - You (familiar singular)
@@ -78,18 +78,18 @@ responses:
              Elas têm - They have (feminine)
              
              Common expressions with the verb TER:
-             - Ele tem fome. -> He is hungry.
-             - Eu tenho sede./Tenho sede. -> I am thirsty.
-             - Você tem vinte anos. -> You are twenty years old."
+             - Ele tem fome. = He is hungry.
+             - Eu tenho sede./Tenho sede. = I am thirsty.
+             - Você tem vinte anos. = You are twenty years old."
 
   utter_lesson1_verbsHaver:
     - text: "In the portuguese language the verb HAVER has 3 different uses:
              - it indicates that something exists: HÁ - there is
-             (eg. HÁ aqui muita gente. -> There are a lot of people here.)
+             (eg. HÁ aqui muita gente. = There are a lot of people here.)
              - it indicates that something has happened in the past
-             (eg. O avião partiu HÁ cinco minutos. -> The plane left five minutes ago.)
+             (eg. O avião partiu HÁ cinco minutos. = The plane left five minutes ago.)
              - is used to express something that will happen in the future as an auxiliary verb : HEI DE - I will
-             (eg. Amanhã HEI DE lavar o meu carro. -> Tomorrow I will wash my car.)
+             (eg. Amanhã HEI DE lavar o meu carro. = Tomorrow I will wash my car.)
 
              Here is the present tense of the verb HAVER as an auxiliary verb:
              Eu hei de - I will
@@ -103,8 +103,8 @@ responses:
              Elas hão de - They will (feminine)
              
              Common expressions with the verb HAVER as an auxiliary verb (used to talk about the future):
-             - Hei de ir ao Algarve./Eu hei de ir ao Algarve. -> I will go to the Algarve.
-             - Eles hão de te ajudar. -> They will help you."
+             - Hei de ir ao Algarve./Eu hei de ir ao Algarve. = I will go to the Algarve.
+             - Eles hão de te ajudar. = They will help you."
 
   utter_lesson1_articles:
     - text: "The definite article: THE
@@ -112,23 +112,47 @@ responses:
              
                     THE
               - singular:
-                    - masculine: o (eg. o rapaz -> the boy)
-                    - feminine: a (eg. a rapariga -> the girl) 
+                    - masculine: o (eg. o rapaz = the boy)
+                    - feminine: a (eg. a rapariga = the girl) 
               - plural: 
-                    - masculine: os (eg. os rapazes -> the boys)
-                    - feminine: as (eg. as raparigas -> the girls)
+                    - masculine: os (eg. os rapazes = the boys)
+                    - feminine: as (eg. as raparigas = the girls)
             
              The indefinite article: A, AN, SOME
             In portuguese A and AN both mean the same and can be translated in the following way:
                   
                    A, AN
               - singular:
-                    - masculine: um (eg. um rapaz -> a boy)
-                    - feminine: uma (eg. uma rapariga -> a girl) 
+                    - masculine: um (eg. um rapaz = a boy)
+                    - feminine: uma (eg. uma rapariga = a girl) 
               - plural: 
               For better correlation between languages, the plural forms of the articles above can be translated to: some.
-                    - masculine: uns (eg. uns rapazes -> some boys)
-                    - feminine: umas (eg. umas raparigas -> some girls"
+                    - masculine: uns (eg. uns rapazes = some boys)
+                    - feminine: umas (eg. umas raparigas = some girls"
+
+  utter_lesson2_askingQuestions:
+    - text: "Usually questions are asked simply by changing the intonation of the sentence, and adding a question mark
+             at the end, resulting in a yes or no question.
+             
+             Você quer mais vinho? = Do you want more wine? -> this question can be answered with a simple:
+              Sim = Yes
+              Não = No
+              
+            Open-ended questions make use of question words:
+              - Quem? = Who? (eg. Quem és tu? = Who are you?) 
+              - Quanto? = How much? (eg. Quantos (the key question word is in the plural form because the noun that
+                follows the question word is also in the plural form) anos tens? = How old are you?)
+              - Qual? = Which? (eg. Qual (Quais - plural form) queres? = Which one do you want?) 
+              - Porquê? = Why? (eg. Porque (this word loses the accent if the question is more specific)
+                estás triste? = Why are you sad?)
+              - Quando? = When? (eg. Quando fazes anos? = When is your birthday?)
+              - Onde? = Where? (eg. Onde moras? = Where do you live?)
+              - Como? = How? (eg. Como estás? = How are you?)
+              - Quê? = What? (eg. O quê? (It is common for the article O to precede the pronoun QUE 
+                but not mandatory.) = What? / O que (When the question does not ends with QUE, the pronoun
+                 loses the accent.) estás a fazer? = What are you doing? / Que dia é hoje? = What day is it today?)
+             "
+
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
 
