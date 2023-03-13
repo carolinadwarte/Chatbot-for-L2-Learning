@@ -150,8 +150,75 @@ responses:
               - Como? = How? (eg. Como estás? = How are you?)
               - Quê? = What? (eg. O quê? (It is common for the article O to precede the pronoun QUE 
                 but not mandatory.) = What? / O que (When the question does not ends with QUE, the pronoun
-                 loses the accent.) estás a fazer? = What are you doing? / Que dia é hoje? = What day is it today?)
-             "
+                 loses the accent.) estás a fazer? = What are you doing? / Que dia é hoje? = What day is it today?)"
+
+  utter_lesson2_verbsSER:
+  - text: "In portuguese there are two verbs that mean TO BE, however, they are used in different situations.
+           
+           The verb SER: used to describe permanent states or conditions. 
+           Here is the present tense of the verb SER:
+             Eu sou - I am
+             Tu és - You are (familiar singular)
+             Você é - You are (informal singular)
+             Ele é - He is
+             Ela é - She is
+             Nós somos - We are
+             Vocês são - You are (familiar plural)
+             Eles são - They are (masculine)
+             Elas são - They are (feminine)
+           
+           Examples of the use of SER:
+            - Eu SOU muito alta./SOU muito alta. = I am very tall.
+            - Ele É muito tímido = He is very shy.
+            - Nós SOMOS amigos. = We are friends.
+            - Lisboa É linda. = Lisbon is beautiful.
+            
+          SER + (the preposition:) DE -> will denote possession, origin. 
+            - Eles SÃO DE Londres. = They are from London.
+            - Esta casa É minha (DE is omitted when a possessive adjective or pronoun follows the verb.) = This house 
+            is mine.
+          
+          SER can also be used for the passive voice, impersonal phrases, telling time and permanent location.
+            - Este trabalho É sempre feito por mim. = This work is always done by me.
+            - É uma hora da tarde. = It is one in the afternoon.
+            - Onde É o castelo de Windsor? = Where is Windsor Castle?"
+
+  utter_lesson2_verbsESTAR:
+    - text: "The other verb used for TO BE is the verb ESTAR and it is typically used for temporary states or conditions,
+             action and place. 
+ 
+           Here is the present tense of the verb ESTAR:
+             Eu estou - I am
+             Tu estás - You are (familiar singular)
+             Você está - You are (informal singular)
+             Ele está - He is
+             Ela está - She is
+             Nós estamos - We are
+             Vocês estão - You are (familiar plural)
+             Eles estão - They are (masculine)
+             Elas estão - They are (feminine)
+
+           Examples of the use of SER:
+            - Eles ESTÃO em Londres./ESTÃO em Londres. = They are in London.
+            - Nós ESTAMOS muito cansados. = We are very tired.
+
+          ESTAR + (the preposition:) A and followed by the infinitive -> expresses the present continuous tense. 
+            - Eu ESTOU a trabalhar. = I am working
+
+          ESTAR + COM  -> means the same as TER (to have) when used like:
+            - ESTOU COM fome. = I am hungry.
+            - ESTOU COM sono = I am sleepy."
+
+  utter_lesson2_verbsSERvsESTAR:
+    - text: "Here is a small comparison of the use of SER and ESTAR.
+             - Ele ESTÁ feio. = He is looking ugly. (temporarily)
+             - Ele É feio. = He is ugly. (permanent)
+             
+             - Tu ÉS diferente. = You are different. (different meaning unique)
+             - Tu ESTÁS diferente. = You are different. (meaning something has changed)
+             
+             - Elas SÃO aborrecidas. (feminine plural) = They are boring.
+             - Elas ESTÃO aborrecidas. (feminine plural) = They are bored."
 
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
