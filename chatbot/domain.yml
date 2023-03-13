@@ -220,6 +220,25 @@ responses:
              - Elas SÃO aborrecidas. (feminine plural) = They are boring.
              - Elas ESTÃO aborrecidas. (feminine plural) = They are bored."
 
+  utter_lesson2_prepositions:
+    - text: "Common portuguese prepositions are:
+             - DE = of, from (eg. Ela é DE Portugal. = She is from Portugal.)
+             - EM = in, on, at (eg. Eles estão EM cima da mesa. (masculine plural) = They are on top of the table.)
+             - A = at, to (eg. Vou A minha casa primeiro. = I am going to my house first.)
+             - POR = for, by, through (eg. Esta escultura foi feita POR mim. = This sculpture was made by me.)
+             - PARA = for, to, in order to (eg. Eu cozinhei PARA ti. = I cooked for you.)
+             
+             Some preposition are combined with definite articles.
+             - DE + O/A/OS/AS -> DO/DA/DOS/DAS = of the, from the
+             - EM + O/A/OS/AS -> NO/NA/NOS/NAS = in the, on the, at the
+             - EM + UM/UMA/UNS/UMAS -> NUM/NUMA/NUNS/NUMAS = in a, in some
+             - A + O/A/OS/AS -> AO/À/AOS/ÀS = to the, at the
+             - POR + O/A/OS/AS -> PELO/PELA/PELOS/PELAS = by the"
+
+  utter_lesson2_possessives:
+  - text: "In the portuguese language there is no equivalent to the english possessive, the preposition DE is used instead.
+           Mary's house -> a casa DA Maria"
+
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
 
