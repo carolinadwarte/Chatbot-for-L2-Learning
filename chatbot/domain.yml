@@ -237,7 +237,45 @@ responses:
 
   utter_lesson2_possessives:
   - text: "In the portuguese language there is no equivalent to the english possessive, the preposition DE is used instead.
-           Mary's house -> a casa DA Maria"
+           Mary's house -> a casa DA Maria (DA is used because Maria is a feminine name)"
+
+  utter_lesson3_demonstratives:
+    - text: "The portuguese demonstratives are:
+              - this: 
+              este (masculine singular)
+              esta (feminine singular)
+              isto (indeterminate)
+              
+              - these:
+              estes (masculine plural)
+              estas (feminine plural)
+              
+              - that (near to the person addressed):
+              esse (masculine singular)
+              essa (feminine singular)
+              isso (indeterminate)
+              
+              - those:
+              esses (masculine plural)
+              essas (feminine plural)
+              
+              - that (over there):
+              aquele (masculine singular)
+              aquela (feminine singular)
+              aquilo (indeterminate)
+              
+              - those:
+              aqueles (masculine plural)
+              aquelas (feminine plural)
+              
+              isto,isso,aquilo are used in place of nouns when the gender of the noun is not known.
+              
+              Demonstratives are combined with the prepositions DE and EM to form:
+              - DE + ESTE = DESTE -> of this, from this (masculine)
+              - DE + ESTA = DESTA -> of this, from this (feminine)
+              - EM + ESTE = NESTE -> in/on this
+              - EM + ESTA = NESTA -> in/on that (feminine)
+              - EM + AQUELE = NAQUELE -> in/on that (further away)"
 
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
