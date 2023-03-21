@@ -277,6 +277,19 @@ responses:
               - EM + ESTA = NESTA -> in/on that (feminine)
               - EM + AQUELE = NAQUELE -> in/on that (further away)"
 
+  utter_lesson3_present_tense:
+    - text: "We will be now exploring the present tense of regular verbs. The portuguese language has 3 conjugations
+             which end in -AR, -ER, -IR. To conjugate any verb all it needs to happen is change the endings to the ones
+             shown below. These endings are important to keep in mind because they indicate who is performing the action,
+             since the personal pronoun is often omitted.
+             
+                                    falAR (to speak)      comER (to eat)      abrIR (to open)
+             eu                     falO                  comO                abrO
+             tu                     falAS                 comES               abrES  
+             você, ele, ela         falA                  comE                abrE
+             nós                    falAMOS               comEMOS             abrIMOS
+             vocês, elas, elas      falAM                 comEM               abrEM"
+
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
 
