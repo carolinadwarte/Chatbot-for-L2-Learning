@@ -316,6 +316,22 @@ responses:
             22 - vinte e dois (m)/ vinte e duas (f)    1000 - mil
             23 - vinte e três                          1100 - mil e cem"
 
+  utter_lesson4_ordinal_numbers:
+    - text: "Portuguese ordinal numbers:
+             1st - primeiro (m)/ primeira (f)                               20th - vigésimo (m)/ vigésima (f)
+             2nd - segundo (m)/ segunda (f)                                 30th - trigésimo (m)/ trigésima (f) 
+             3rd - terceiro (m)/ terceira (f)                               40th - quadragésimo (m)/ quadragésima (f) 
+             4th - quarto (m)/ quarta (f)                                   50th - quinquagésimo (m)/ quinquagésima (f)  
+             5th - quinto (m)/ quinta (f)                                   60th - sexagésimo (m)/ sexagésima (f) 
+             6th - sexto (m)/ sexta (f)                                     70th - septuagésimo (m)/ septuagésima (f)  
+             7th - sétimo (m)/ sétima (f)                                   80th - octogésimo (m)/ octogésima (f) 
+             8th - oitavo (m)/ oitava (f)                                   90th - nonagésimo (m)/ nonagésima (f)   
+             9th - nono (m)/ nona (f)                                      100th - centésimo (m)/ centésima (f)
+            10th - décimo (m)/ décima (f)                                 1000th - milésimo (m)/ milésima (f)   
+            11th - décimo primeiro (m)/ décimo primeira (f)          1 000 000th - milionésimo (m)/ milionésima (f)    
+            12th - décimo segundo (m)/ décimo segunda (f)        
+            etc."
+
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
 
