@@ -362,6 +362,40 @@ responses:
              o outono -> autumn
              o inverno -> winter"
 
+  utter_lesson4_timeofday/year:
+    - text: "A few additional notes to describe time and yearly celebrations:
+             today = hoje
+             tomorrow = amanhã
+             the day after tomorrow = depois de amanhã
+             yesterday = ontem
+             the day before yesterday = anteontem (antes de ontem - is also used)
+             
+             tonight = hoje à noite
+             this afternoon = esta tarde
+             this morning = esta manhã
+             tomorrow morning = amanhã de manhã
+             tomorrow evening/night = amanhã à noite
+             
+             last month = no mês passado
+             next week = na próxima semana (na semana que vem - is also used)
+             the day before = véspera
+             in a fortnight's time = daqui a 15 dias
+             
+             Christmas eve = consoada
+             Christmas = Natal
+             new year's eve = véspera do ano novo
+             new year = ano novo
+             Lent = Quaresma
+             Easter = Páscoa
+             
+             Happy Christmas = Feliz Natal
+             Prosperous new year = Próspero Ano Novo
+             Happy Easter = Páscoa Feliz
+             Congratulations = Parabéns
+             Good luck = Boa sorte
+             Much happiness = Felicidades
+             Happy anniversary = Happy anniversary "
+
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
 
