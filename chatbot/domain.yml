@@ -397,7 +397,7 @@ responses:
              Happy anniversary = Happy anniversary "
 
   utter_lesson4_possessives:
-  - text: "In portuguese the possessive adjectives and pronouns agree in number and gender with the object
+  - text:   "In portuguese the possessive adjectives and pronouns agree in number and gender with the object
            
                                       masculine singular      feminine singular      masculine plural      feminine plural
              my,mine                         o meu                 a minha                os meus              as minhas
@@ -413,6 +413,18 @@ responses:
              The possessive adjective is usually proceeded bya definite article. Eg. O MEU copo = my glass
              When there is no doubt about the ownership, the possessive adjective can be replaced with the 
              definite article. Eg. Vou lavar AS mãos. = I am going to wash my hands."
+
+  utter_lesson4_past_definite:
+  - text:   "We will be now exploring the past definite of regular verbs. The portuguese language has 3 conjugations
+             which end in -AR, -ER, -IR. To conjugate any verb all it needs to happen is change the endings to the ones
+             shown below.
+             
+                                    falAR (to speak)      comER (to eat)      abrIR (to open)
+             eu                     falEI                 comI                abrI
+             tu                     falASTE               comESTE             abrISTE  
+             você, ele, ela         falOU                 comEU               abrIU
+             nós                    falÁMOS               comEMOS             abrIMOS
+             vocês, elas, elas      falARAM               comERAM             abrIRAM"
 
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
