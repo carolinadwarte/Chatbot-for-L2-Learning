@@ -396,6 +396,24 @@ responses:
              Much happiness = Felicidades
              Happy anniversary = Happy anniversary "
 
+  utter_lesson4_possessives:
+  - text: "In portuguese the possessive adjectives and pronouns agree in number and gender with the object
+           
+                                      masculine singular      feminine singular      masculine plural      feminine plural
+             my,mine                         o meu                 a minha                os meus              as minhas
+             your(s) (familiar form)         o teu                 a tua                  os teus              as tuas
+             your(s) (formal form)           o seu                 a sua                  os seus              as suas
+             his/her(s)/its                  o seu                 a sua                  os seus              as suas
+             our/ours                        o nosso               a nossa                os nossos            as nossas
+             your/yours                      o vosso               a vossa                os vossos            as vossas
+             their/theirs                    o seu                 a sua                  os seus              as suas
+             
+             
+             Notes:
+             The possessive adjective is usually proceeded bya definite article. Eg. O MEU copo = my glass
+             When there is no doubt about the ownership, the possessive adjective can be replaced with the 
+             definite article. Eg. Vou lavar AS mãos. = I am going to wash my hands."
+
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
 
