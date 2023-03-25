@@ -290,6 +290,32 @@ responses:
              nós                    falAMOS               comEMOS             abrIMOS
              vocês, elas, elas      falAM                 comEM               abrEM"
 
+  utter_lesson4_cardinal_numbers:
+    - text: "The cardinal numbers in portuguese:
+             1 - um (masculine)/ uma (feminine)          30 - trinta                 1101 - mil cento e um (m)/ mil cento e uma (f)
+             2 - dois (m)/ duas (f)                      40 - quarenta               2000 - dois mil (m)/ duas mil (f)
+             3 - três                                    50 - cinquenta           100 000 - cem mil 
+             4 - quatro                                  60 - sessenta          1 000 000 - um milhão
+             5 - cinco                                   70 - setenta           2 000 000 - dois milhões
+             6 - seis                                    80 - oitenta
+             7 - sete                                    90 - noventa
+             8 - oito                                   100 - cem
+             9 - nove                                   101 - cento e um (m)/ cento e uma (f)
+            10 - dez                                    102 - cento e dois (m)/ cento e duas (f)
+            11 - onze                                   120 - cento e vinte
+            12 - doze                                   125 - cento e vinte e cinco
+            13 - treze                                  200 - duzentos (m)/ duzentas (f)
+            14 - catorze                                201 - duzentos e um (m)/ duzentas e duas (f)
+            15 - quinze                                 300 - trezentos (m)/ trezentas (f)
+            16 - dezasseis                              400 - quatrocentos (m)/ quatrocentas (f)
+            17 - dezassete                              500 - quinhentos (m)/ quinhentas (f)
+            18 - dezoito                                600 - seiscentos (m)/ seiscentas (f)
+            19 - dezanove                               700 - setecentos (m)/ setecentas (f)
+            20 - vinte                                  800 - oitocentos (m)/ oitocentas (f)
+            21 - vinte e um (m)/ vinte e uma (f)        900 - novecentos (m)/ novecentas (f)
+            22 - vinte e dois (m)/ vinte e duas (f)    1000 - mil
+            23 - vinte e três                          1100 - mil e cem"
+
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
 
