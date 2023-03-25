@@ -332,6 +332,36 @@ responses:
             12th - décimo segundo (m)/ décimo segunda (f)        
             etc."
 
+  utter_lesson4_days_months_seasons:
+    - text: "Days of the week (= dias da semana):
+             domingo -> Sunday
+             segunda-feira -> Monday
+             terça-feira -> Tuesday
+             quarta-feira -> Wednesday
+             quinta-feira -> Thursday
+             sexta-feira -> Friday
+             sábado -> Saturday
+             
+             Months of the year (= meses do ano):
+             Janeiro -> January
+             Fevereiro -> February
+             Março -> March
+             Abril -> April
+             Maio -> May
+             Junho -> June
+             Julho -> July
+             Agosto -> August
+             Setembro -> September
+             Outubro -> October
+             Novembro -> November
+             Dezembro -> December
+             
+             Seasons of the year (= estações do ano):
+             a primavera -> spring
+             o verão -> summer
+             o outono -> autumn
+             o inverno -> winter"
+
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."
 
