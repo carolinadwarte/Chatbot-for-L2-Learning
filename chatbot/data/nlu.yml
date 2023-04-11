@@ -13,8 +13,8 @@ nlu:
     - hey there
     - let's go
     - hey dude
-    - goodmorning
-    - goodevening
+    - good morning
+    - good evening
     - good afternoon
 
 - intent: goodbye
@@ -47,3 +47,7 @@ nlu:
       - Wow that is a lot to take in! Thank you :)
       - Pretty cool 
       - nice! thank you for your help
+
+- intent: call_text_to_speech
+  examples: |
+      - Repeat this out loud *

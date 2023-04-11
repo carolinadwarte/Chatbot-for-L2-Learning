@@ -26,3 +26,8 @@ rules:
   steps:
   - intent: greet
   - action: utter_greet
+
+- rule: Call text to speech
+  steps:
+  - intent: call_text_to_speech
+  - action: action_text_to_speech

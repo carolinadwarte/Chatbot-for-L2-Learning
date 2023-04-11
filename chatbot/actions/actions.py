@@ -30,23 +30,26 @@
 # interface with Google Translate’s text-to-speech API. Writes spoken mp3 data to a file, a file-like object
 # (bytestring) for further audio manipulation, or stdout.
 
-from rasa_sdk import Action
-from rasa_sdk.executor import CollectingDispatcher
-from typing import Any, Text, Dict, List
+from typing import Dict, Text, Any, List
+from rasa_sdk import Action, Tracker
 from gtts import gTTS
-import os
+from rasa_sdk.executor import CollectingDispatcher
 
 
 class ActionTextToSpeech(Action):
     def name(self):
         return "action_text_to_speech"
 
-    def run(self, dispatcher, tracker, domain):
-        # Get the text input from the user
-        text = tracker.latest_message['text']
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # Extract the wildcard text from the user input
+        query = tracker.latest_message['text']
+        query = query.split(' ', 1)[1]
 
         # Generate the speech output using gTTS
-        speech = gTTS(text=text, lang='pt-pt')
+        speech = gTTS(text=query, lang='pt-pt')
 
         # Save the speech output as an audio file
         speech_file = 'speech.mp3'
@@ -56,4 +59,5 @@ class ActionTextToSpeech(Action):
         dispatcher.utter_audio_file(speech_file)
 
         # Return an empty list to update the chatbot's state
+        # events that should be applied to the conversation state
         return []

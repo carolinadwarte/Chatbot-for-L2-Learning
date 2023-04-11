@@ -19,6 +19,11 @@ stories:
     - intent: some_essential_phrases
     - action: utter_chitchat2
 
+- story: text to speech
+  steps:
+    - intent: call_text_to_speech
+    - action: action_text_to_speech
+
 - story: goodbye
   steps:
     - intent: goodbye
