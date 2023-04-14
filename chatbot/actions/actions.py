@@ -26,14 +26,15 @@
 #
 #         return []
 
-# This file implements the text to speech functionality. gTTS is implemented - a Python library and CLI tool to
-# interface with Google Translate’s text-to-speech API. Writes spoken mp3 data to a file, a file-like object
-# (bytestring) for further audio manipulation, or stdout.
-
 from typing import Dict, Text, Any, List
 from rasa_sdk import Action, Tracker
 from gtts import gTTS
 from rasa_sdk.executor import CollectingDispatcher
+
+
+# This file implements the text to speech functionality. gTTS is implemented - a Python library and CLI tool to
+# interface with Google Translate’s text-to-speech API. Writes spoken mp3 data to a file, a file-like object
+# (bytestring) for further audio manipulation, or stdout.
 
 
 class ActionTextToSpeech(Action):

@@ -8,6 +8,7 @@ intents:
   - some_essential_phrases
 
 actions:
+  - action_send_to_discord
   - action_text_to_speech
 
 responses:

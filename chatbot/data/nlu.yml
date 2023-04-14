@@ -50,4 +50,4 @@ nlu:
 
 - intent: call_text_to_speech
   examples: |
-      - Repeat this out loud *
+      - Repeat this out loud: *
