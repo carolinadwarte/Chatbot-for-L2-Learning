@@ -3,8 +3,6 @@
 #
 # See this guide on how to implement these action:
 # https://rasa.com/docs/rasa/custom-actions
-
-
 # This is a simple example for a custom action which utters "Hello World!"
 
 # from typing import Any, Text, Dict, List
@@ -26,11 +24,11 @@
 #
 #         return []
 
-from typing import Dict, Text, Any, List
-from rasa_sdk import Action, Tracker
+from typing import List
 from gtts import gTTS
+from typing import Dict, Text, Any
+from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-
 
 # This file implements the text to speech functionality. gTTS is implemented - a Python library and CLI tool to
 # interface with Google Translate’s text-to-speech API. Writes spoken mp3 data to a file, a file-like object
