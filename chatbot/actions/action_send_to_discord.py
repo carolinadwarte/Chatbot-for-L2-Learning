@@ -9,7 +9,7 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa.core.agent import Agent
 
 # Set up the Discord bot
-intents = discord.Intents.guilds | discord.Intents.messages | discord.Intents.members | discord.Intents.guild_messages | discord.Intents.dm_messages
+intents = discord.Intents.all()
 client = discord.Client(intents=intents)
 
 # Set up the Rasa agent
