@@ -43,19 +43,26 @@ class ActionTextToSpeech(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
+        with open('../in-string', 'r') as f:
+            text = f.read()
+
+        if not text:
+            print("There was not input for gTTS!")
+            text = "poop"
+
         # Extract the wildcard text from the user input
-        query = tracker.latest_message['text']
+        query = tracker.latest_message[text]
         query = query.split(' ', 1)[1]
 
         # Generate the speech output using gTTS
         speech = gTTS(text=query, lang='pt-pt')
 
         # Save the speech output as an audio file
-        speech_file = 'speech.mp3'
+        speech_file = '../speech.mp3'
         speech.save(speech_file)
 
         # Send the speech output back to the user
-        dispatcher.utter_audio_file(speech_file)
+        # dispatcher.utter_audio_file(speech_file)
 
         # Return an empty list to update the chatbot's state
         # events that should be applied to the conversation state

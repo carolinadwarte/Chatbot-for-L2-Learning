@@ -22,7 +22,7 @@ stories:
 - story: text to speech
   steps:
     - intent: call_text_to_speech
-    - action: action_text_to_speech
+    - action: utter_tts
 
 - story: goodbye
   steps:

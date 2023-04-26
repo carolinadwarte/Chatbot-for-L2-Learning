@@ -1,4 +1,4 @@
- version: "3.1"
+version: "3.1"
 
 intents:
   - greet
@@ -6,11 +6,15 @@ intents:
   - test_content
   - progress
   - some_essential_phrases
+  - call_text_to_speech
 
-actions:
-  - action_text_to_speech
+
+
 
 responses:
+  utter_tts:
+    - text: "Here is the pronunciation for:"
+
   utter_greet:
   - text: "Hi! My name is Ines and I will be your Portuguese teacher."
   - text: "Hello, I'm Ines. Ready to learn some Portuguese?"
