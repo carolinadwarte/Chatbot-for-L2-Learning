@@ -24,6 +24,11 @@ stories:
     - intent: call_text_to_speech
     - action: utter_tts
 
+- story: translation
+  steps:
+    - intent: call_translation
+    - action: utter_translation
+
 - story: goodbye
   steps:
     - intent: goodbye

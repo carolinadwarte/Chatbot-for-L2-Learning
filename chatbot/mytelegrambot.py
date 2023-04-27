@@ -1,16 +1,16 @@
 import logging
-
+import translators as ts
 import telegram.ext
 from gtts import gTTS
-from telegram import Update, Voice
+from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler
 from telegram.ext import filters
 from rasa.core.agent import Agent
-from chatbot.actions import actions
 
 AUDIO_FILE_PATH = "speech.mp3"
 VOICE_NOTE_TRIGGER = "Here is the pronunciation for:"
 voice_note_counter = 0
+TRANSLATION_TRIGGER = "Translate this:"
 
 # Loading the models
 agent = Agent.load('./models')
@@ -27,32 +27,41 @@ async def greet(update: Update, context: telegram.ext.CallbackContext):
     response = await agent.handle_text(user_input)
 
     if VOICE_NOTE_TRIGGER in response[0]["text"]:
-        # do the voice note
         # Remove command from user input
-        #user_input = user_input.replace("Repeat this out loud:", "")
         colon_point = user_input.find(":")
-        user_readable = user_input[colon_point:]
+        user_readable = user_input[colon_point+1:]
         print(f"[System] sending gTTS: {user_readable}")
+        # Call TTS function with input
         text_to_speach(user_readable)
-        #this_voice = Voice(AUDIO_FILE_PATH, f"voice-{voice_note_counter}.mp3", 30)
         voice_note_counter += 1
         with open(AUDIO_FILE_PATH, 'rb') as voice_file:
+            # Send response to chatbot
             await context.bot.send_voice(chat_id=update.effective_chat.id, voice=voice_file)
+    elif TRANSLATION_TRIGGER in response[0]["text"]:
+        # Remove command from user
+        colon_point = user_input.find(":")
+        user_readable = user_input[colon_point+1:]
+        print(f"[System] sending translation: {user_readable}")
+        # Call translation function with input
+        bot_response = translation(user_readable)
+        # Send response to chatbot
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=bot_response)
     else:
         try:
             bot_response = response[0]["text"]
         except IndexError:
             print(f"[ERROR] No response given for input: {user_input}")
-            bot_response = "Sorry, I'm having trouble with that one"
+            bot_response = "Sorry, I'm having trouble with that one."
+        # Send response to chatbot
         await context.bot.send_message(chat_id=update.effective_chat.id, text=bot_response)
 
 
-# async def voice_note(update: Update, context: telegram.ext.CallbackContext):
-#     user_input = update.message.text
-#
-#     text_to_speach(user_input)
-#
-#     await context.bot.send_voice(chat_id=update.effective_chat.id, voice='speech.mp3')
+def translation(query):
+    print(f"[Bot] Running gtts...", end="")
+    # Call API to generate translation
+    translated_text = ts.translate_text(query, 'google', 'en', 'pt')
+    print("Saved")
+    return translated_text
 
 
 def text_to_speach(query):
@@ -70,8 +79,5 @@ if __name__ == '__main__':
 
     greeting_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), greet)
     application.add_handler(greeting_handler)
-
-    speech_handler = MessageHandler(filters.TEXT & (~filters.COMMAND), voice_note)
-    application.add_handler(speech_handler)
 
     application.run_polling()

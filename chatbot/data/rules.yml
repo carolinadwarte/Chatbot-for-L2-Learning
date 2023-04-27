@@ -31,3 +31,8 @@ rules:
   steps:
   - intent: call_text_to_speech
   - action: utter_tts
+
+- rule: Call translation
+  steps:
+  - intent: call_translation
+  - action: utter_translation

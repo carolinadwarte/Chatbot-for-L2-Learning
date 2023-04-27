@@ -51,3 +51,7 @@ nlu:
 - intent: call_text_to_speech
   examples: |
       - Repeat this out loud: *
+
+- intent: call_translation
+  examples: |
+      - Translate this: *

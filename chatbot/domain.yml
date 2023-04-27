@@ -7,11 +7,15 @@ intents:
   - progress
   - some_essential_phrases
   - call_text_to_speech
+  - call_translation
 
 
 
 
 responses:
+  utter_translation:
+    - text: "Translate this:"
+
   utter_tts:
     - text: "Here is the pronunciation for:"
 
