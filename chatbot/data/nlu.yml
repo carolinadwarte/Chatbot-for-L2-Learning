@@ -29,6 +29,7 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - adeus
 
 - intent: test_content
   examples: |
@@ -37,10 +38,136 @@ nlu:
     - cool! teach me something
     - let's learn some portuguese
 
+- intent: call_lesson1
+  examples: |
+    - I'm ready to have my first lesson!
+    - ready for lesson number 1
+    - lesson 1
+    - give me lesson 1 please
+
+- intent: call_lesson2
+  examples: |
+    - I'm ready to have my second lesson!
+    - ready for lesson number 2
+    - lesson 2
+    - give me lesson 2 please
+
+- intent: call_lesson3
+  examples: |
+    - I'm ready to have my third lesson!
+    - ready for lesson number 3
+    - lesson 3
+    - give me lesson 3 please
+
+- intent: call_lesson4
+  examples: |
+    - I'm ready to have my fourth lesson!
+    - ready for lesson number 4
+    - lesson 4
+    - give me lesson 4 please
+
+- intent: call_past_definite
+  examples: |
+    - past definite
+    - explain the past definite
+
+- intent: call_possessives2
+  examples: |
+    - possessives
+    - explain the possessives
+
+- intent: call_possessives4
+  examples: |
+    - possessives
+    - explain the possessives
+
+- intent: call_timeofday/year
+  examples: |
+    - time of the day
+    - time of year
+    - explain the time of the day
+    - explain the time of year
+
+- intent: call_days_months_seasons
+  examples: |
+    - days
+    - days of the week
+    - months
+    - seasons
+    - explain the days of the week
+    - explain the months   
+    - explain the seasons
+
+- intent: call_ordinal_numbers
+  examples: |
+    - ordinal numbers
+    - explain the ordinal numbers 
+
+- intent: call_cardinal_numbers
+  examples: |
+    - cardinal numbers
+    - explain the cardinal numbers     
+
+- intent: call_present_tense
+  examples: |
+    - present tense
+    - explain the present tense
+
+- intent: call_demonstratives
+  examples: |
+    - demonstratives
+    - explain demonstratives
+
+- intent: call_prepositions
+  examples: |
+    - prepositions
+    - explain prepositions
+
+- intent: call_verbsSERvsESTAR
+  examples: |
+    - SER vs ESTAR
+    - explain the difference between Ser and Estar
+
+- intent: call_verbsESTAR
+  examples: |
+    - ESTAR
+    - explain estar
+
+- intent: call_verbsSER
+  examples: |
+    - SER
+    - explain ser
+
+- intent: call_askingQuestions
+  examples: |
+    - asking questions
+    - explain how to ask questions
+
+- intent: call_articles
+  examples: |
+    - articles
+    - explain articles
+
+- intent: call_verbsHaver
+  examples: |
+    - Haver
+    - explain haver   
+
+- intent: call_verbsTer
+  examples: |
+    - Ter
+    - explain Ter 
+
+- intent: call_personalPronouns
+  examples: |
+    - personal pronouns
+    - explain personal pronouns 
+
 - intent: progress
   examples: |
     - tell me more
     - go on
+    - ok
 
 - intent: some_essential_phrases
   examples: |

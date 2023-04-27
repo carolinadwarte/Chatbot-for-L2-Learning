@@ -6,11 +6,30 @@ intents:
   - test_content
   - progress
   - some_essential_phrases
+  - call_lesson1
+  - call_lesson2
+  - call_lesson3
+  - call_lesson4
   - call_text_to_speech
   - call_translation
-
-
-
+  - call_past_definite
+  - call_possessives4
+  - call_timeofday/year
+  - call_days_months_seasons
+  - call_ordinal_numbers
+  - call_cardinal_numbers
+  - call_present_tense
+  - call_possessives2
+  - call_prepositions
+  - call_demonstratives
+  - call_verbsSERvsESTAR
+  - call_verbsESTAR
+  - call_verbsSER
+  - call_askingQuestions
+  - call_articles
+  - call_verbsHaver
+  - call_verbsTer
+  - call_personalPronouns
 
 responses:
   utter_translation:
@@ -20,40 +39,68 @@ responses:
     - text: "Here is the pronunciation for:"
 
   utter_greet:
-  - text: "Hi! My name is Ines and I will be your Portuguese teacher."
-  - text: "Hello, I'm Ines. Ready to learn some Portuguese?"
+  - text: |
+          Hi, this is your manual to navigate the chatbot!
+          To greet use commands like: “hey”, “hello”, “let’s go”, “good morning”.
+          To say goodbye use commands like: “cu”, “bye”, “have a nice day”, “adeus”, “see you later”.
+          To follow a test lesson use commands like: “I'm ready to learn some Portuguese!", "ready to do some learning", 
+          "cool! teach me something".
+          Currently the system has 4 lessons available, here is a summary:
+          Lesson 1:
+          •	personalPronouns
+          •	verb Ter
+          •	verb Haver
+          •	articles
+          Lesson 2:
+          •	asking questions
+          •	verb SER
+          •	verb ESTAR
+          •	verbs SERvsESTAR
+          •	prepositions
+          •	possessives
+          Lesson 3:
+          •	demonstratives
+          •	present tense
+          Lesson 4:
+          •	cardinal numbers
+          •	ordinal numbers
+          •	days, months, seasons
+          •	time of day/year
+          •	possessives
+          •	past definite
+          To start a new lesson call the first topic and to move between lesson contents just follow the summary 
+          and call the next topic (example input: “demonstratives”, “explain how to ask questions”).
+          For a more independent learning there’s the option of not following any lessons, simply just 
+          call the desired content (example input: “possessives”, “cardinal numbers”).
+          This chatbot has a text-to-speech feature to help with your listening and pronunciation skills, 
+          to use it just follow the commands: “repeat this out loud: olá”,or “repeat: tudo bem”.
+          Lastly, there is also available a translation service from English to Portuguese, 
+          just use the command: “translate this: I am sleepy”, or “translate: desculpa”.
+          Have fun and good learnings!
 
   utter_test_content:
   - text: "Amazing! Let's start with the basics :)"
   - text: "Awesome! I have some simple greetings and basic terms to teach you."
 
   utter_some_essential_phrases:
-  - text: "Hello = Olá
-    
-           It's nice to meet you = Prazer em conhecer
-             
-           Thank you = Obrigado (maculine) / Obrigada (feminine)
-
-           You're welcome = De nada
-             
+  - text: |
+          Hello = Olá
+          It's nice to meet you = Prazer em conhecer 
+          Thank you = Obrigado (maculine) / Obrigada (feminine)
+          You're welcome = De nada
            How are you? = Como está? -> to reply to this one could say:
             Estou bem, obrigado. = I'm fine, thank you. (masculine as in this case 
-            obrigado ends with -o) 
-             
+            obrigado ends with -o)   
            Please = Por favor
-
            Sorry = Desculpe / Desculpa (more informal)
-
-           Excuse me = Com licença
-            
+           Excuse me = Com licença            
            See you later = Até logo
-
            See you tomorrow = Até amanhã
-
-           Goodbye = Adeus / Xau (very informal)"
+           Goodbye = Adeus / Xau (very informal)
 
   utter_lesson1_personalPronouns:
-    - text: "The first grammatical content I will teach you are personal pronouns. 
+    - text:  |
+             The first grammatical content I will teach you are personal pronouns. 
              Here's a simple table showing the correspondence between both languages:
              Eu - I
              Tu - You (familiar singular)
@@ -64,19 +111,17 @@ responses:
              Vocês - You (familiar plural)
              Eles - They (masculine)
              Elas - They (feminine)
-             
              Notes:
              In portuguese it is common to omit the personal pronouns EU, TU and NÓS as the ending of the verb is enough
              to tell who is performing the described action.
-             
              The pronoun TU is used among relatives, children and people of similar age. 
              For more informal conversations (eg. in the workplace, between student - teacher)
              the pronoun VOCÊ is more adequate.
-             
-             The plural of both pronouns above discussed is VOCÊS."
+             The plural of both pronouns above discussed is VOCÊS.
 
   utter_lesson1_verbsTer:
-    - text: "The verb TER, means - to have. 
+    - text: |
+             The verb TER, means - to have. 
              Here is the present tense of the verb TER:
              Eu tenho - I have
              Tu tens - You have (familiar singular)
@@ -87,21 +132,20 @@ responses:
              Vocês têm - You have (familiar plural)
              Eles têm - They have (masculine)
              Elas têm - They have (feminine)
-             
              Common expressions with the verb TER:
              - Ele tem fome. = He is hungry.
              - Eu tenho sede./Tenho sede. = I am thirsty.
-             - Você tem vinte anos. = You are twenty years old."
+             - Você tem vinte anos. = You are twenty years old.
 
   utter_lesson1_verbsHaver:
-    - text: "In the portuguese language the verb HAVER has 3 different uses:
+    - text: |
+             In the portuguese language the verb HAVER has 3 different uses:
              - it indicates that something exists: HÁ - there is
              (eg. HÁ aqui muita gente. = There are a lot of people here.)
              - it indicates that something has happened in the past
              (eg. O avião partiu HÁ cinco minutos. = The plane left five minutes ago.)
              - is used to express something that will happen in the future as an auxiliary verb : HEI DE - I will
              (eg. Amanhã HEI DE lavar o meu carro. = Tomorrow I will wash my car.)
-
              Here is the present tense of the verb HAVER as an auxiliary verb:
              Eu hei de - I will
              Tu hás de - You will (familiar singular)
@@ -112,13 +156,13 @@ responses:
              Vocês hão de - You will (familiar plural)
              Eles hão de - They will (masculine)
              Elas hão de - They will (feminine)
-             
              Common expressions with the verb HAVER as an auxiliary verb (used to talk about the future):
              - Hei de ir ao Algarve./Eu hei de ir ao Algarve. = I will go to the Algarve.
-             - Eles hão de te ajudar. = They will help you."
+             - Eles hão de te ajudar. = They will help you.
 
   utter_lesson1_articles:
-    - text: "The definite article: THE
+    - text: |
+            The definite article: THE
              THE has 4 different variations singular/plural and masculine/feminine.
              
                     THE
@@ -128,10 +172,8 @@ responses:
               - plural: 
                     - masculine: os (eg. os rapazes = the boys)
                     - feminine: as (eg. as raparigas = the girls)
-            
              The indefinite article: A, AN, SOME
-            In portuguese A and AN both mean the same and can be translated in the following way:
-                  
+             In portuguese A and AN both mean the same and can be translated in the following way:
                    A, AN
               - singular:
                     - masculine: um (eg. um rapaz = a boy)
@@ -139,10 +181,11 @@ responses:
               - plural: 
               For better correlation between languages, the plural forms of the articles above can be translated to: some.
                     - masculine: uns (eg. uns rapazes = some boys)
-                    - feminine: umas (eg. umas raparigas = some girls"
+                    - feminine: umas (eg. umas raparigas = some girls
 
   utter_lesson2_askingQuestions:
-    - text: "Usually questions are asked simply by changing the intonation of the sentence, and adding a question mark
+    - text: |
+            Usually questions are asked simply by changing the intonation of the sentence, and adding a question mark
              at the end, resulting in a yes or no question.
              
              Você quer mais vinho? = Do you want more wine? -> this question can be answered with a simple:
@@ -150,7 +193,7 @@ responses:
               Não = No
               
             Open-ended questions make use of question words:
-              - Quem? = Who? (eg. Quem és tu? = Who are you?) 
+              - Quem? = Who? (eg. Quem és tu? = Who are you?)
               - Quanto? = How much? (eg. Quantos (the key question word is in the plural form because the noun that
                 follows the question word is also in the plural form) anos tens? = How old are you?)
               - Qual? = Which? (eg. Qual (Quais - plural form) queres? = Which one do you want?) 
@@ -161,10 +204,11 @@ responses:
               - Como? = How? (eg. Como estás? = How are you?)
               - Quê? = What? (eg. O quê? (It is common for the article O to precede the pronoun QUE 
                 but not mandatory.) = What? / O que (When the question does not ends with QUE, the pronoun
-                 loses the accent.) estás a fazer? = What are you doing? / Que dia é hoje? = What day is it today?)"
+                 loses the accent.) estás a fazer? = What are you doing? / Que dia é hoje? = What day is it today?)
 
   utter_lesson2_verbsSER:
-  - text: "In portuguese there are two verbs that mean TO BE, however, they are used in different situations.
+  - text: |
+          In portuguese there are two verbs that mean TO BE, however, they are used in different situations.
            
            The verb SER: used to describe permanent states or conditions. 
            Here is the present tense of the verb SER:
@@ -179,7 +223,7 @@ responses:
              Elas são - They are (feminine)
            
            Examples of the use of SER:
-            - Eu SOU muito alta./SOU muito alta. = I am very tall.
+            - Eu SOU muito alta./ SOU muito alta. = I am very tall.
             - Ele É muito tímido = He is very shy.
             - Nós SOMOS amigos. = We are friends.
             - Lisboa É linda. = Lisbon is beautiful.
@@ -188,17 +232,17 @@ responses:
             - Eles SÃO DE Londres. = They are from London.
             - Esta casa É minha (DE is omitted when a possessive adjective or pronoun follows the verb.) = This house 
             is mine.
-          
           SER can also be used for the passive voice, impersonal phrases, telling time and permanent location.
             - Este trabalho É sempre feito por mim. = This work is always done by me.
             - É uma hora da tarde. = It is one in the afternoon.
-            - Onde É o castelo de Windsor? = Where is Windsor Castle?"
+            - Onde É o castelo de Windsor? = Where is Windsor Castle?
 
   utter_lesson2_verbsESTAR:
-    - text: "The other verb used for TO BE is the verb ESTAR and it is typically used for temporary states or conditions,
+    - text: |
+            The other verb used for TO BE is the verb ESTAR and it is typically used for temporary states or conditions,
              action and place. 
  
-           Here is the present tense of the verb ESTAR:
+            Here is the present tense of the verb ESTAR:
              Eu estou - I am
              Tu estás - You are (familiar singular)
              Você está - You are (informal singular)
@@ -209,19 +253,18 @@ responses:
              Eles estão - They are (masculine)
              Elas estão - They are (feminine)
 
-           Examples of the use of SER:
+            Examples of the use of SER:
             - Eles ESTÃO em Londres./ESTÃO em Londres. = They are in London.
             - Nós ESTAMOS muito cansados. = We are very tired.
-
-          ESTAR + (the preposition:) A and followed by the infinitive -> expresses the present continuous tense. 
+            ESTAR + (the preposition:) A and followed by the infinitive -> expresses the present continuous tense. 
             - Eu ESTOU a trabalhar. = I am working
-
-          ESTAR + COM  -> means the same as TER (to have) when used like:
+            ESTAR + COM  -> means the same as TER (to have) when used like:
             - ESTOU COM fome. = I am hungry.
-            - ESTOU COM sono = I am sleepy."
+            - ESTOU COM sono = I am sleepy.
 
   utter_lesson2_verbsSERvsESTAR:
-    - text: "Here is a small comparison of the use of SER and ESTAR.
+    - text: |
+            Here is a small comparison of the use of SER and ESTAR.
              - Ele ESTÁ feio. = He is looking ugly. (temporarily)
              - Ele É feio. = He is ugly. (permanent)
              
@@ -229,10 +272,11 @@ responses:
              - Tu ESTÁS diferente. = You are different. (meaning something has changed)
              
              - Elas SÃO aborrecidas. (feminine plural) = They are boring.
-             - Elas ESTÃO aborrecidas. (feminine plural) = They are bored."
+             - Elas ESTÃO aborrecidas. (feminine plural) = They are bored.
 
   utter_lesson2_prepositions:
-    - text: "Common portuguese prepositions are:
+    - text: |
+            Common portuguese prepositions are:
              - DE = of, from (eg. Ela é DE Portugal. = She is from Portugal.)
              - EM = in, on, at (eg. Eles estão EM cima da mesa. (masculine plural) = They are on top of the table.)
              - A = at, to (eg. Vou A minha casa primeiro. = I am going to my house first.)
@@ -244,14 +288,16 @@ responses:
              - EM + O/A/OS/AS -> NO/NA/NOS/NAS = in the, on the, at the
              - EM + UM/UMA/UNS/UMAS -> NUM/NUMA/NUNS/NUMAS = in a, in some
              - A + O/A/OS/AS -> AO/À/AOS/ÀS = to the, at the
-             - POR + O/A/OS/AS -> PELO/PELA/PELOS/PELAS = by the"
+             - POR + O/A/OS/AS -> PELO/PELA/PELOS/PELAS = by the
 
   utter_lesson2_possessives:
-  - text: "In the portuguese language there is no equivalent to the english possessive, the preposition DE is used instead.
-           Mary's house -> a casa DA Maria (DA is used because Maria is a feminine name)"
+  - text: | 
+          In the portuguese language there is no equivalent to the english possessive, the preposition DE is used instead.
+          Mary's house -> a casa DA Maria (DA is used because Maria is a feminine name)
 
   utter_lesson3_demonstratives:
-    - text: "The portuguese demonstratives are:
+    - text: |
+            The portuguese demonstratives are:
               - this: 
               este (masculine singular)
               esta (feminine singular)
@@ -286,23 +332,25 @@ responses:
               - DE + ESTA = DESTA -> of this, from this (feminine)
               - EM + ESTE = NESTE -> in/on this
               - EM + ESTA = NESTA -> in/on that (feminine)
-              - EM + AQUELE = NAQUELE -> in/on that (further away)"
+              - EM + AQUELE = NAQUELE -> in/on that (further away)
 
   utter_lesson3_present_tense:
-    - text: "We will be now exploring the present tense of regular verbs. The portuguese language has 3 conjugations
-             which end in -AR, -ER, -IR. To conjugate any verb all it needs to happen is change the endings to the ones
-             shown below. These endings are important to keep in mind because they indicate who is performing the action,
-             since the personal pronoun is often omitted.
+    - text: |
+            We will be now exploring the present tense of regular verbs. The portuguese language has 3 conjugations
+            which end in -AR, -ER, -IR. To conjugate any verb all it needs to happen is change the endings to the ones
+            shown below. These endings are important to keep in mind because they indicate who is performing the action,
+            since the personal pronoun is often omitted.
              
                                     falAR (to speak)      comER (to eat)      abrIR (to open)
              eu                     falO                  comO                abrO
              tu                     falAS                 comES               abrES  
              você, ele, ela         falA                  comE                abrE
              nós                    falAMOS               comEMOS             abrIMOS
-             vocês, elas, elas      falAM                 comEM               abrEM"
+             vocês, elas, elas      falAM                 comEM               abrEM
 
   utter_lesson4_cardinal_numbers:
-    - text: "The cardinal numbers in portuguese:
+    - text: |
+            The cardinal numbers in portuguese:
              1 - um (masculine)/ uma (feminine)          30 - trinta                 1101 - mil cento e um (m)/ mil cento e uma (f)
              2 - dois (m)/ duas (f)                      40 - quarenta               2000 - dois mil (m)/ duas mil (f)
              3 - três                                    50 - cinquenta           100 000 - cem mil 
@@ -325,10 +373,11 @@ responses:
             20 - vinte                                  800 - oitocentos (m)/ oitocentas (f)
             21 - vinte e um (m)/ vinte e uma (f)        900 - novecentos (m)/ novecentas (f)
             22 - vinte e dois (m)/ vinte e duas (f)    1000 - mil
-            23 - vinte e três                          1100 - mil e cem"
+            23 - vinte e três                          1100 - mil e cem
 
   utter_lesson4_ordinal_numbers:
-    - text: "Portuguese ordinal numbers:
+    - text: |
+            Portuguese ordinal numbers:
              1st - primeiro (m)/ primeira (f)                               20th - vigésimo (m)/ vigésima (f)
              2nd - segundo (m)/ segunda (f)                                 30th - trigésimo (m)/ trigésima (f) 
              3rd - terceiro (m)/ terceira (f)                               40th - quadragésimo (m)/ quadragésima (f) 
@@ -341,10 +390,11 @@ responses:
             10th - décimo (m)/ décima (f)                                 1000th - milésimo (m)/ milésima (f)   
             11th - décimo primeiro (m)/ décimo primeira (f)          1 000 000th - milionésimo (m)/ milionésima (f)    
             12th - décimo segundo (m)/ décimo segunda (f)        
-            etc."
+            etc.
 
   utter_lesson4_days_months_seasons:
-    - text: "Days of the week (= dias da semana):
+    - text: |
+            Days of the week (= dias da semana):
              domingo -> Sunday
              segunda-feira -> Monday
              terça-feira -> Tuesday
@@ -371,44 +421,44 @@ responses:
              a primavera (primavera is a feminine name) -> spring
              o verão (verão is a masculine name) -> summer
              o outono -> autumn
-             o inverno -> winter"
+             o inverno -> winter
 
   utter_lesson4_timeofday/year:
-    - text: "A few additional notes to describe time and yearly celebrations:
-             today = hoje
-             tomorrow = amanhã
-             the day after tomorrow = depois de amanhã
-             yesterday = ontem
-             the day before yesterday = anteontem (antes de ontem - is also used)
+    - text: |
+            A few additional notes to describe time and yearly celebrations:
+            today = hoje
+            tomorrow = amanhã
+            the day after tomorrow = depois de amanhã
+            yesterday = ontem
+            the day before yesterday = anteontem (antes de ontem - is also used)
              
-             tonight = hoje à noite
-             this afternoon = esta tarde
-             this morning = esta manhã
-             tomorrow morning = amanhã de manhã
-             tomorrow evening/night = amanhã à noite
+            tonight = hoje à noite
+            this afternoon = esta tarde
+            this morning = esta manhã
+            tomorrow morning = amanhã de manhã
+            tomorrow evening/night = amanhã à noite
+            last month = no mês passado
+            next week = na próxima semana (na semana que vem - is also used)
+            the day before = véspera
+            in a fortnight's time = daqui a 15 dias
              
-             last month = no mês passado
-             next week = na próxima semana (na semana que vem - is also used)
-             the day before = véspera
-             in a fortnight's time = daqui a 15 dias
-             
-             Christmas eve = consoada
-             Christmas = Natal
-             new year's eve = véspera do ano novo
-             new year = ano novo
-             Lent = Quaresma
-             Easter = Páscoa
-             
-             Happy Christmas = Feliz Natal
-             Prosperous new year = Próspero Ano Novo
-             Happy Easter = Páscoa Feliz
-             Congratulations = Parabéns
-             Good luck = Boa sorte
-             Much happiness = Felicidades
-             Happy anniversary = Happy anniversary "
+            Christmas eve = consoada
+            Christmas = Natal
+            new year's eve = véspera do ano novo
+            new year = ano novo
+            Lent = Quaresma
+            Easter = Páscoa
+            Happy Christmas = Feliz Natal
+            Prosperous new year = Próspero Ano Novo
+            Happy Easter = Páscoa Feliz
+            Congratulations = Parabéns
+            Good luck = Boa sorte
+            Much happiness = Felicidades
+            Happy anniversary = Happy anniversary
 
   utter_lesson4_possessives:
-  - text:   "In portuguese the possessive adjectives and pronouns agree in number and gender with the object
+  - text:   |
+            In portuguese the possessive adjectives and pronouns agree in number and gender with the object
            
                                       masculine singular      feminine singular      masculine plural      feminine plural
              my,mine                         o meu                 a minha                os meus              as minhas
@@ -423,10 +473,11 @@ responses:
              Notes:
              The possessive adjective is usually proceeded bya definite article. Eg. O MEU copo = my glass
              When there is no doubt about the ownership, the possessive adjective can be replaced with the 
-             definite article. Eg. Vou lavar AS mãos. = I am going to wash my hands."
+             definite article. Eg. Vou lavar AS mãos. = I am going to wash my hands.
 
   utter_lesson4_past_definite:
-  - text:   "We will be now exploring the past definite of regular verbs. The portuguese language has 3 conjugations
+  - text:   |
+            We will be now exploring the past definite of regular verbs. The portuguese language has 3 conjugations
              which end in -AR, -ER, -IR. To conjugate any verb all it needs to happen is change the endings to the ones
              shown below.
              
@@ -435,7 +486,7 @@ responses:
              tu                     falASTE               comESTE             abrISTE  
              você, ele, ela         falOU                 comEU               abrIU
              nós                    falÁMOS               comEMOS             abrIMOS
-             vocês, elas, elas      falARAM               comERAM             abrIRAM"
+             vocês, elas, elas      falARAM               comERAM             abrIRAM
 
   utter_chitchat2:
   - text: "These are some introductory terms to carry out a simple conversation."

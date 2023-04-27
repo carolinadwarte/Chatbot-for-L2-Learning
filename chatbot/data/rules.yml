@@ -17,15 +17,122 @@ rules:
   - intent: some_essential_phrases
   - action: utter_chitchat2
 
-- rule: Deliver content anytime the user asks for progress 
-  steps:
-  - intent: progress
-  - action: utter_some_essential_phrases
-
 - rule: Greet the user anytime the user says hello
   steps:
   - intent: greet
   - action: utter_greet
+
+- rule: Call personalPronouns
+  steps:
+  - intent: call_personalPronouns
+  - action: utter_lesson1_personalPronouns
+
+- rule: Call verbsTer
+  steps:
+  - intent: call_verbsTer
+  - action: utter_lesson1_verbsTer
+
+- rule: Call verbsHaver
+  steps:
+  - intent: call_verbsHaver
+  - action: utter_lesson1_verbsHaver
+
+- rule: Call articles
+  steps:
+  - intent: call_articles
+  - action: utter_lesson1_articles
+
+- rule: Call lesson1
+  steps:
+  - intent: call_lesson1
+  - action: utter_lesson1_personalPronouns
+
+- rule: Call askingQuestions
+  steps:
+  - intent: call_askingQuestions
+  - action: utter_lesson2_askingQuestions
+
+- rule: Call verbsSER
+  steps:
+  - intent: call_verbsSER
+  - action: utter_lesson2_verbsSER
+
+- rule: Call verbsESTAR
+  steps:
+  - intent: call_verbsESTAR
+  - action: utter_lesson2_verbsESTAR
+
+- rule: Call verbsSERvsESTAR
+  steps:
+  - intent: call_verbsSERvsESTAR
+  - action: utter_lesson2_verbsSERvsESTAR
+
+- rule: Call prepositions
+  steps:
+  - intent: call_prepositions
+  - action: utter_lesson2_prepositions
+
+- rule: Call possessives
+  steps:
+  - intent: call_possessives2
+  - action: utter_lesson2_possessives
+  - action: utter_lesson4_possessives
+
+- rule: Call possessives duplicate
+  steps:
+  - intent: call_possessives4
+  - action: utter_lesson2_possessives
+  - action: utter_lesson4_possessives
+
+- rule: Call lesson2
+  steps:
+  - intent: call_lesson2
+  - action: utter_lesson2_askingQuestions
+
+- rule: Call demonstratives
+  steps:
+  - intent: call_demonstratives
+  - action: utter_lesson3_demonstratives
+
+- rule: Call present_tense
+  steps:
+  - intent: call_present_tense
+  - action: utter_lesson3_present_tense
+
+- rule: Call lesson3
+  steps:
+  - intent: call_lesson3
+  - action: utter_lesson3_demonstratives
+
+- rule: Call cardinal_numbers
+  steps:
+  - intent: call_cardinal_numbers
+  - action: utter_lesson4_cardinal_numbers
+
+- rule: Call ordinal_numbers
+  steps:
+  - intent: call_ordinal_numbers
+  - action: utter_lesson4_ordinal_numbers
+
+- rule: Call days_months_seasons
+  steps:
+  - intent: call_days_months_seasons
+  - action: utter_lesson4_days_months_seasons
+
+- rule: Call timeofday/year
+  steps:
+  - intent: call_timeofday/year
+  - action: utter_lesson4_timeofday/year
+
+- rule: Call past_definite
+  steps:
+  - intent: call_past_definite
+  - action: utter_lesson4_past_definite
+
+- rule: Call lesson4
+  steps:
+  - intent: call_lesson4
+  - action: utter_lesson4_cardinal_numbers
 
 - rule: Call text to speech
   steps:

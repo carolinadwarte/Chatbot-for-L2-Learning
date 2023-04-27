@@ -19,6 +19,146 @@ stories:
     - intent: some_essential_phrases
     - action: utter_chitchat2
 
+- story: explain personalPronouns
+  steps:
+    - intent: call_personalPronouns
+    - action: utter_lesson1_personalPronouns
+
+- story: explain verbsTer
+  steps:
+    - intent: call_verbsTer
+    - action: utter_lesson1_verbsTer
+
+- story: explain verbsHaver
+  steps:
+    - intent: call_verbsHaver
+    - action: utter_lesson1_verbsHaver
+
+- story: explain articles
+  steps:
+    - intent: call_articles
+    - action: utter_lesson1_articles
+
+- story: lesson1
+  steps:
+    - intent: call_lesson1
+    - action: utter_lesson1_personalPronouns
+    - intent: progress
+    - action: utter_lesson1_verbsTer
+    - intent: progress
+    - action: utter_lesson1_verbsHaver
+    - intent: progress
+    - action: utter_lesson1_articles
+
+- story: explain askingQuestions
+  steps:
+    - intent: call_askingQuestions
+    - action: utter_lesson2_askingQuestions
+
+- story: explain verbsSER
+  steps:
+    - intent: call_verbsSER
+    - action: utter_lesson2_verbsSER
+
+- story: explain verbsESTAR
+  steps:
+    - intent: call_verbsESTAR
+    - action: utter_lesson2_verbsESTAR
+
+- story: explain verbsSERvsESTAR
+  steps:
+    - intent: call_verbsSERvsESTAR
+    - action: utter_lesson2_verbsSERvsESTAR
+
+- story: explain prepositions
+  steps:
+    - intent: call_prepositions
+    - action: utter_lesson2_prepositions
+
+- story: explain possessives
+  steps:
+    - intent: call_possessives2
+    - action: utter_lesson2_possessives
+    - action: utter_lesson4_possessives
+
+- story: explain possessives duplicate
+  steps:
+    - intent: call_possessives4
+    - action: utter_lesson2_possessives
+    - action: utter_lesson4_possessives
+
+- story: lesson2
+  steps:
+    - intent: call_lesson2
+    - action: utter_lesson2_askingQuestions
+    - intent: progress
+    - action: utter_lesson2_verbsSER
+    - intent: progress
+    - action: utter_lesson2_verbsESTAR
+    - intent: progress
+    - action: utter_lesson2_verbsSERvsESTAR
+    - intent: progress
+    - action: utter_lesson2_prepositions
+    - intent: progress
+    - action: utter_lesson2_possessives
+
+- story: explain demonstratives
+  steps:
+    - intent: call_demonstratives
+    - action: utter_lesson3_demonstratives
+
+- story: explain present_tense
+  steps:
+    - intent: call_present_tense
+    - action: utter_lesson3_present_tense
+
+- story: lesson3
+  steps:
+    - intent: call_lesson3
+    - action: utter_lesson3_demonstratives
+    - intent: progress
+    - action: utter_lesson3_present_tense
+
+- story: explain cardinal_numbers
+  steps:
+    - intent: call_cardinal_numbers
+    - action: utter_lesson4_cardinal_numbers
+
+- story: explain ordinal_numbers
+  steps:
+    - intent: call_ordinal_numbers
+    - action: utter_lesson4_ordinal_numbers
+
+- story: explain days_months_seasons
+  steps:
+    - intent: call_days_months_seasons
+    - action: utter_lesson4_days_months_seasons
+
+- story: explain timeofday/year
+  steps:
+    - intent: call_timeofday/year
+    - action: utter_lesson4_timeofday/year
+
+- story: explain past_definite
+  steps:
+    - intent: call_past_definite
+    - action: utter_lesson4_past_definite
+
+- story: lesson4
+  steps:
+    - intent: call_lesson4
+    - action: utter_lesson4_cardinal_numbers
+    - intent: progress
+    - action: utter_lesson4_ordinal_numbers
+    - intent: progress
+    - action: utter_lesson4_days_months_seasons
+    - intent: progress
+    - action: utter_lesson4_timeofday/year
+    - intent: progress
+    - action: utter_lesson4_possessives
+    - intent: progress
+    - action: utter_lesson4_past_definite
+
 - story: text to speech
   steps:
     - intent: call_text_to_speech

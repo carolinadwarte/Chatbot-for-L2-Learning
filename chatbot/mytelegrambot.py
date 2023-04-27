@@ -24,6 +24,7 @@ logging.basicConfig(
 async def greet(update: Update, context: telegram.ext.CallbackContext):
     global voice_note_counter
     user_input = update.message.text
+    print(user_input)
     response = await agent.handle_text(user_input)
 
     if VOICE_NOTE_TRIGGER in response[0]["text"]:
@@ -53,6 +54,7 @@ async def greet(update: Update, context: telegram.ext.CallbackContext):
             print(f"[ERROR] No response given for input: {user_input}")
             bot_response = "Sorry, I'm having trouble with that one."
         # Send response to chatbot
+        print(bot_response)
         await context.bot.send_message(chat_id=update.effective_chat.id, text=bot_response)
 
 
