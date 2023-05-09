@@ -10,9 +10,10 @@ from rasa.core.agent import Agent
 
 AUDIO_FILE_PATH = "speech.mp3"
 VOICE_NOTE_TRIGGER = "Here is the pronunciation for:"
+TRANSLATION_TRIGGER = "Translate this:"
 voice_note_counter = 0
 chat_log = {}
-TRANSLATION_TRIGGER = "Translate this:"
+
 
 # Loading the models
 agent = Agent.load('./models')
@@ -62,6 +63,8 @@ async def greet(update: Update, context: telegram.ext.CallbackContext):
         await context.bot.send_message(chat_id=update.effective_chat.id, text=bot_response)
 
     chat_log[user_input] = bot_response
+
+
 def translation(query):
     print(f"[Bot] Running gtts...", end="")
     # Call API to generate translation

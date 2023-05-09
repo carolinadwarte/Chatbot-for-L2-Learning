@@ -13,13 +13,13 @@ intents:
   - call_text_to_speech
   - call_translation
   - call_past_definite
-  - call_possessives4
-  - call_timeofday/year
+  - call_timeofday_year
   - call_days_months_seasons
   - call_ordinal_numbers
   - call_cardinal_numbers
   - call_present_tense
   - call_possessives2
+  - call_possessives4
   - call_prepositions
   - call_demonstratives
   - call_verbsSERvsESTAR
@@ -291,9 +291,9 @@ responses:
              - POR + O/A/OS/AS -> PELO/PELA/PELOS/PELAS = by the
 
   utter_lesson2_possessives:
-  - text: | 
-          In the portuguese language there is no equivalent to the english possessive, the preposition DE is used instead.
-          Mary's house -> a casa DA Maria (DA is used because Maria is a feminine name)
+    - text: | 
+            In the portuguese language there is no equivalent to the english possessive, the preposition DE is used instead.
+            Mary's house -> a casa DA Maria (DA is used because Maria is a feminine name)
 
   utter_lesson3_demonstratives:
     - text: |
@@ -423,7 +423,7 @@ responses:
              o outono -> autumn
              o inverno -> winter
 
-  utter_lesson4_timeofday/year:
+  utter_lesson4_timeofday_year:
     - text: |
             A few additional notes to describe time and yearly celebrations:
             today = hoje

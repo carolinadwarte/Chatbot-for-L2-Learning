@@ -134,10 +134,10 @@ stories:
     - intent: call_days_months_seasons
     - action: utter_lesson4_days_months_seasons
 
-- story: explain timeofday/year
+- story: explain timeofday_year
   steps:
-    - intent: call_timeofday/year
-    - action: utter_lesson4_timeofday/year
+    - intent: call_timeofday_year
+    - action: utter_lesson4_timeofday_year
 
 - story: explain past_definite
   steps:
@@ -153,7 +153,7 @@ stories:
     - intent: progress
     - action: utter_lesson4_days_months_seasons
     - intent: progress
-    - action: utter_lesson4_timeofday/year
+    - action: utter_lesson4_timeofday_year
     - intent: progress
     - action: utter_lesson4_possessives
     - intent: progress

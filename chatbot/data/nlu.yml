@@ -40,31 +40,19 @@ nlu:
 
 - intent: call_lesson1
   examples: |
-    - I'm ready to have my first lesson!
-    - ready for lesson number 1
-    - lesson 1
-    - give me lesson 1 please
+    - lesson1
 
 - intent: call_lesson2
   examples: |
-    - I'm ready to have my second lesson!
-    - ready for lesson number 2
-    - lesson 2
-    - give me lesson 2 please
+    - lesson2
 
 - intent: call_lesson3
   examples: |
-    - I'm ready to have my third lesson!
-    - ready for lesson number 3
-    - lesson 3
-    - give me lesson 3 please
+    - lesson3
 
 - intent: call_lesson4
   examples: |
-    - I'm ready to have my fourth lesson!
-    - ready for lesson number 4
-    - lesson 4
-    - give me lesson 4 please
+    - lesson4
 
 - intent: call_past_definite
   examples: |
@@ -81,7 +69,7 @@ nlu:
     - possessives
     - explain the possessives
 
-- intent: call_timeofday/year
+- intent: call_timeofday_year
   examples: |
     - time of the day
     - time of year

@@ -42,7 +42,7 @@ rules:
   - intent: call_articles
   - action: utter_lesson1_articles
 
-- rule: Call lesson1
+- rule: call lesson 1
   steps:
   - intent: call_lesson1
   - action: utter_lesson1_personalPronouns
@@ -84,7 +84,7 @@ rules:
   - action: utter_lesson2_possessives
   - action: utter_lesson4_possessives
 
-- rule: Call lesson2
+- rule: call lesson 2
   steps:
   - intent: call_lesson2
   - action: utter_lesson2_askingQuestions
@@ -99,7 +99,7 @@ rules:
   - intent: call_present_tense
   - action: utter_lesson3_present_tense
 
-- rule: Call lesson3
+- rule: call lesson 3
   steps:
   - intent: call_lesson3
   - action: utter_lesson3_demonstratives
@@ -119,17 +119,17 @@ rules:
   - intent: call_days_months_seasons
   - action: utter_lesson4_days_months_seasons
 
-- rule: Call timeofday/year
+- rule: Call timeofday_year
   steps:
-  - intent: call_timeofday/year
-  - action: utter_lesson4_timeofday/year
+  - intent: call_timeofday_year
+  - action: utter_lesson4_timeofday_year
 
 - rule: Call past_definite
   steps:
   - intent: call_past_definite
   - action: utter_lesson4_past_definite
 
-- rule: Call lesson4
+- rule: call lesson 4
   steps:
   - intent: call_lesson4
   - action: utter_lesson4_cardinal_numbers
